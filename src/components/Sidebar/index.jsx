@@ -50,9 +50,10 @@ export default function Sidebar() {
                     ))
                 }
                 <hr />
-                <li>
-                    <p className="text-base text-gray-500">Deny Firdhaus H.P
-                        <span>All rights reserved</span>
+                <li className="relative">
+                    <p className="text-base text-gray-500">&copy; Deny Firdhaus H.P 2022
+                        <br />
+                        <span>All rights reserved.</span>
                     </p>
                 </li>
             </ul>
