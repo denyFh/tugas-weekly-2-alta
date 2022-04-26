@@ -1,16 +1,20 @@
-import { Fragment, useEffect, useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { Fragment, useState, useEffect } from "react";
+import { useParams, useNavigate} from "react-router-dom";
 
-import Sidebar from "../../components/Sidebar";
+// import Sidebar from "../../components/Sidebar";
 import materies from "../../materies";
 
 const Detail = () => {
 
     const { materiId } = useParams();
     const navigate = useNavigate();
+    const [materi, setMateri] = useState(null);
     
-    const currentMateri = materies.find(materi => materi.id === materiId);
-    const [materi, setMateri] = useState(currentMateri);
+    useEffect(() => {
+        const currentMateri = materies.find(materi => materi.id === materiId);
+        
+        setMateri(currentMateri);
+    }, [materiId])
 
     return (
         <>

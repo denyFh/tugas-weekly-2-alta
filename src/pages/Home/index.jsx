@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import Sidebar from '../../components/Sidebar';
+// import { useState } from 'react';
+// import { useNavigate, useParams } from 'react-router-dom';
+// import Sidebar from '../../components/Sidebar';
 
-import logo from '../../logo.svg';
-import '../../App.css';
+// import logo from '../../logo.svg';
+// import '../../App.css';
 
-import materies from '../../materies';
+// import materies from '../../materies';
 
 function Home() {
     return (
