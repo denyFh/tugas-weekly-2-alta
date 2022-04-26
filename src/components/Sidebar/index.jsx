@@ -10,11 +10,11 @@ export default function Sidebar() {
     let sidebarClassName = "flex items-center py-4 px-4 h-8 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 cursor-pointer";
 
     return (
-        <div className="flex flex-col w-full md:w-64 text-gray-700 px-4 py-3 bg-white flex-shrink-0 h-fit md:h-full fixed shadow-xl">
-            <div className="flex-shrink-0 px-4 py-4 flex flex-row items-center justify-between flex-wrap">
+        <div className="fixed flex flex-col flex-shrink-0 w-full px-4 py-3 text-gray-700 bg-white shadow-xl md:w-64 h-fit md:h-full">
+            <div className="flex flex-row flex-wrap items-center justify-between flex-shrink-0 px-4 py-4">
                     <NavLink
-                        to="/" className="flex items-center flex-col">
-                        <span className="md:block hidden self-center text-xl font-semibold whitespace-nowrap">Weekly Task 2</span>
+                        to="/" className="flex flex-col items-center">
+                        <span className="self-center hidden text-xl font-semibold md:block whitespace-nowrap">Weekly Task 2</span>
                         <span className="text-xl font-semibold whitespace-nowrap">ReactJS FE Engineer A</span>
                     </NavLink>
                 <button className="rounded-lg md:hidden focus:outline-none focus:shadow-outline" onClick={() => {
@@ -50,6 +50,11 @@ export default function Sidebar() {
                     ))
                 }
                 <hr />
+                <li>
+                    <p className="text-base text-gray-500">Deny Firdhaus H.P
+                        <span>All rights reserved</span>
+                    </p>
+                </li>
             </ul>
         </div>
     );
